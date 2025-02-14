@@ -4,30 +4,33 @@ import { AcknowledgmentsData } from './index';
 
 const testimonials = new AcknowledgmentsData();
 
-const Testimonial = () => {
+const Testimonial = ({ tipo }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const list = tipo === 'padrinos' ? testimonials.godparents : testimonials.special;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.godparents.length);
-    }, 5000); // Aumenté el tiempo para permitir una lectura cómoda
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % list.length);
+    }, 5000); 
     return () => clearInterval(interval);
-  }, []);
+  }, [list]);
 
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.godparents.length) % testimonials.godparents.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + list.length) % list.length);
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.godparents.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % list.length);
   };
 
   return (
-    <section id='testimonial' className="w-full h-[50vh] md:h-[60vh] flex flex-col justify-center items-center p-4 relative overflow-hidden ">
-      <p className="absolute z-10 top-10 md:top-16 font-signature text-4xl sm:text-6xl lg:text-7xl text-gold">
-        Agradecimientos
-      </p>
-      <div className="relative w-full flex justify-center items-center mt-16 md:mt-20">
+    <section id='testimonial' className={`w-full ${tipo === 'padrinos' ? ' h-[40vh] md:h-[50vh]' : 'h-[20vh] md:h-[20vh]'} flex flex-col justify-center items-center p-4 relative overflow-hidden `}>
+      {tipo === 'padrinos' && (
+        <p className="absolute z-10 top-10 md:top-16 font-signature text-4xl sm:text-6xl lg:text-7xl text-gold">
+          Agradecimientos
+        </p>
+      )}
+      <div className={`relative w-full flex justify-center items-center ${tipo === 'padrinos' ? 'mt-16 md:mt-20' : ''}`}>
         <AnimatePresence>
           <motion.div
             key={currentIndex}
@@ -37,11 +40,11 @@ const Testimonial = () => {
             transition={{ duration: 0.5 }}
             className="absolute p-4 md:p-6 rounded-lg text-center w-full flex items-center justify-center flex-col space-y-4 bg-white"
           >
-            <h2 className="text-gold font-signature text-7xl sm:text-6xl md:text-5xl lg:text-6xl">
-              {testimonials.godparents[currentIndex].title}
+            <h2 className="text-gold font-signature text-4xl sm:text-5xl md:text-5xl lg:text-6xl">
+              {list[currentIndex].title}
             </h2>
             <p className="font-weddingtwo text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl">
-              {testimonials.godparents[currentIndex].name}
+              {list[currentIndex].name}
             </p>
           </motion.div>
         </AnimatePresence>

@@ -19,7 +19,9 @@ export default {
         weddingtwo: ["font-wedding-two", "sans-serif"],
         mandala: ["font-mandala", "sans-serif"],
         signature: ["font-signature", "sans-serif"],
+        sign: ["font-sign", "sans-serif"],
         handw: ["font-handw", "sans-serif"],
+        rosalie: ["font-rosalie", "sans-serif"],
       },
     },
     screens: {

@@ -42,8 +42,20 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'font-rosalie';
+  src: url('./assets/fonts/Rosalie.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'font-signature';
   src: url('./assets/fonts/signature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font-sign';
+  src: url('./assets/fonts/signature-2.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -70,9 +82,10 @@
   radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
  }
  .bg-gold{
-  background: #B29566
+  background: #B29566;
+  color : #f0d18f
  }
-
+ 
  .border-gold{
   color: #B29566
  }

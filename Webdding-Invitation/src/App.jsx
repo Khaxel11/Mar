@@ -12,6 +12,8 @@ import ChatBox from './components/ChatBox';
 import WhatsAppButton from './components/WhatsAppButton ';
 import CodeDress from './components/CodeDress'
 import Itinerary from './components/Itinerary'
+import SaveTheDate from './components/SaveTheDate';
+import { save, save2, save4 } from './assets/index'
 const App = () => {
   const [showLetter, setShowLetter] = useState(true);
   const [loading, setLoading] = useState(true);
@@ -46,18 +48,21 @@ const App = () => {
       ) : (
         <motion.section className="w-full h-auto">
           <Hero/>
+          <SaveTheDate imageSrc={save}/>
           <Info />
           <Placement />
           <div className="mt-1 w-full h-[3px] bg-gold" />
           <div className="mt-1 w-full h-[3px] bg-gold" />
 
-          <Testimonial />
+          <Testimonial tipo={'padrinos'}/>
+          <Testimonial tipo={'special'}/>
           <div className='mb-1 w-full h-[3px] bg-gold' />
           <div className='mb-4 w-full h-[3px] bg-gold' />
+          <SaveTheDate imageSrc={save2}/>
           <CodeDress/>
           <Itinerary/>
           <Gallery />
-
+          <SaveTheDate imageSrc={save4}/>
           {isChatBoxVisible && <ChatBox onClose={handleToggleChatBox} />}
           <WhatsAppButton onClick={handleToggleChatBox} />
           

@@ -10,67 +10,26 @@ export class AcknowledgmentsData{
   godparents=[
     {
       id: 1,
-      title:'Ramo',
-      name: 'Nadia Zamora Castillo'
+      title:'Padrino Anillos',
+      name: 'Marco Borbón'
     },
     {
       id: 2,
-      title:'Biblia',
-      name: 'Maria Castillo'
+      title:'Padrino Anillos',
+      name: 'Daniel Soto'
     },
     {
       id: 3,
-      title:'Lazo',
-      name: 'Paulina Garcia'
-    },
-    {
-      id: 4,
-      title:'Brindis',
-      name: 'Marco Borbon'
-    },
-    {
-      id: 5,
-      title:'Salón',
-      name: 'Enrique Palomares'
-    },
-    {
-      id: 6,
-      title:'Invitaciones',
-      name: 'Axel Aguilar'
-    }
-  ]
-  parents = [
-    {
-      id: 1,
-      title: 'Mamá',
-      name: 'Guadalupe Castillo'
-    },
-    {
-      id: 2,
-      title: 'Papá',
-      name: 'Sr Zamora'
-    },
-    {
-      id: 3,
-      title: 'Hermana',
-      name: 'Nadia Zamora'
-    },
-    {
-      id: 4,
-      title: 'Hermano',
-      name: 'Zamora Castillo'
-    },
-    {
-      id: 5,
-      title: 'Perriho',
-      name: 'Caiman'
+      title:'Madrina Anillos',
+      name: 'Anel Bujada'
     },
   ]
+
   special = [
     {
       id: 1,
       title: 'Dama de Honor',
-      name: 'Guadalupe Castillo'
+      name: 'Nadia Zamora'
     },
     {
       id: 2,
@@ -80,7 +39,27 @@ export class AcknowledgmentsData{
     {
       id: 3,
       title: 'Dama de Honor',
-      name: 'Nadia Zamora'
+      name: 'Cecilia Castillo'
+    },
+    {
+      id: 4,
+      title: 'Dama de Honor',
+      name: 'Gisela Castillo'
+    },
+    {
+      id: 5,
+      title: 'Dama de Honor',
+      name: 'Ismari Acuña'
+    },
+    {
+      id: 6,
+      title: 'Dama de Honor',
+      name: 'Ami Acuña'
+    },
+    {
+      id: 7,
+      title: 'Damo de Honor',
+      name: 'Javier León'
     },
   ]
 

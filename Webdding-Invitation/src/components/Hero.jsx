@@ -21,20 +21,20 @@ const Hero = () => (
       transition={{ duration: 1.5, delay: 0.5 }}
     ></motion.div>
     <motion.div 
-      className='absolute flex justify-center align-middle z-7 sm:mt-[5rem] mt-[15rem] lg:mt-[15rem] md:mt-[30vh] xl:mt-[10rem]'
+      className='absolute flex justify-center align-middle z-7 mt-[25rem]  xs:mt-[30rem] sm:mt-[30vh] md:mt-[50vh] lg:mt-[60vh] xl:mt-[60vh]'
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 1 }}
     >
-      <p className='absolute font-signature text-center text-white text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[5rem]'>
+      <p className='absolute font-signature text-center text-white text-[2rem] sm:text-[2rem] md:text-[4rem] lg:text-[4rem]'>
         ¡Nos Casamos el 16 de Marzo!
       </p>
-      <p className='font-signature text-center mr-2 text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[5rem]'>
+      <p className='font-signature text-center text-[2rem] sm:text-[2rem] md:text-[4rem] lg:text-[4rem]'>
         ¡Nos Casamos el 16 de Marzo!
       </p>
     </motion.div>
     <motion.div 
-      className='flex justify-center align-middle z-4 md:mb-[50vh] lg:mb-[30vh] mb-[50vh] xl:mb-[20vh] '
+      className='flex justify-center align-middle z-4 md:mb-[20vh] lg:mb-[20vh] mb-[30vh] xl:mb-[10vh] mt-[20vh] xs:mt-[40vh] sm:mt-[30vh] md:mt-[30vh] lg:mt-[30vh] xl:mt-[30vh]'
       initial={{ y: 50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, delay: 1.5 }}

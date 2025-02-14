@@ -105,7 +105,7 @@ const AudioPlayer = () => {
             <img
               src={player.cover}
               alt="Album cover"
-              className="w-10 h-10 md:w-20 md:h-20 rounded-lg cursor-pointer"
+              className="w-10 h-10 md:w-20 md:h-20 rounded-lg cursor-pointer object-cover"
               onClick={() => setShowPlayer(true)}
             />
           </motion.div>
@@ -139,7 +139,7 @@ const AudioPlayer = () => {
               <img
                 src={player.cover}
                 alt="Album cover"
-                className="w-12 h-12 md:w-20 md:h-20 rounded-lg"
+                className="w-12 h-12 md:w-20 md:h-20 rounded-lg object-cover"
               />
               <div className="flex flex-1 flex-col ml-4">
                 <div className="text-sm text-white"><a href={player.urlmusic}>{player.name}</a></div>

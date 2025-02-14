@@ -1,55 +1,48 @@
-import quotes from "./quotes.svg";
-import logo from "./logo.png";
-import send from "./Send.svg";
-import star from "./Star.svg";
-import menu from "./menu.svg";
-import close from "./close.svg";
-import arrowUp from "./arrow-up.svg";
+
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
-import linkedin from "./linkedin.svg";
-import twitter from "./twitter.svg";
-import testimonial01 from "./testimonial1.png";
-import testimonial02 from "./testimonial2.png";
-import testimonial03 from "./testimonial3.png";
-import lettertop from './letter-top.png'
-import lettermiddle from './letter-middle.png'
-import letterbottom from './letter-bottom.png'
-import stamp from './stamp.png'
-import flowers from './wedding-flowers.png'
-import hero from './hero.jpg'
-import backgroundtop from './background.jpg'
-import backgroundbottom from './backgroundbottom.jpg'
+import lettertop from './letter-top.webp'
+import lettermiddle from './letter-middle.webp'
+import letterbottom from './letter-bottom.webp'
+import stamp from './stamp.webp'
+import flowers from './wedding-flowers.webp'
+import hero from './hero.webp'
+import backgroundtop from './background.webp'
+import backgroundbottom from './backgroundbottom.webp'
 import marker from './marker.svg'
 import hour from './hour.svg'
 import sound from './Sound.png'
 import mute from './Mute.png'
 import place from './place.webp'
 import detail from './detail.png'
-import circle from './bgcircle.png'
-import gallery1 from './gallery1.jpg'
-import gallery2 from './gallery2.jpg'
-import gallery3 from './gallery3.jpg'
-import gallery4 from './gallery4.jpg'
-import gallery5 from './gallery5.jpg'
-import gallery6 from './gallery6.jpg'
-import gallery7 from './gallery7.jpg'
-import gallery8 from './gallery8.png'
-import gallery9 from './gallery9.png'
-import gallery10 from './gallery10.png'
-import gallery11 from './gallery11.png'
-import gallery12 from './gallery12.png'
-import cover from './cover.jpg'
+import circle from './bgcircle.webp'
+import gallery1 from './gallery1.webp'
+import gallery2 from './gallery2.webp'
+import gallery3 from './gallery3.webp'
+import gallery4 from './gallery4.webp'
+import gallery5 from './gallery5.webp'
+import gallery6 from './gallery6.webp'
+import gallery7 from './gallery7.webp'
+import gallery8 from './gallery8.webp'
+import gallery9 from './gallery9.webp'
+import gallery10 from './gallery10.webp'
+import gallery11 from './gallery11.webp'
+import gallery12 from './gallery12.webp'
+import cover from './cover.webp'
 import music from './music/music.mp3'
 import whastapp from './whatsapp.svg'
-import womancode from './womancode.png'
-import mancode from './mancode.png'
-import codebg from './codebg.jpg'
+import womancode from './womancode.webp'
+import mancode from './mancode.webp'
+import codebg from './codebg.jpg' 
 import ring from './ring.svg'
 import dinner from './dinner.svg'
 import stars from './stars.svg'
 import moon from './moon.svg'
 import watch from './watch.svg'
+import save from './save.webp'
+import save2 from './save2.webp'
+import save4 from './save4.webp'
+import mail from './mail.svg'
 const player = {
   url : music,
   cover : cover,
@@ -64,8 +57,6 @@ export {
   letterbottom,
   stamp,
   flowers,
-  logo,
-  quotes,
   hero,
   backgroundtop,
   backgroundbottom,
@@ -82,22 +73,12 @@ export {
   gallery6,
   gallery7,
   gallery8,
-  gallery9,
+  gallery9, 
   gallery10,
   gallery11,
   gallery12,
-  send,
-  star,
-  menu,
-  close,
-  arrowUp,
   facebook,
   instagram,
-  linkedin,
-  twitter,
-  testimonial01,
-  testimonial02,
-  testimonial03,
   sound,
   mute,
   player,
@@ -109,6 +90,9 @@ export {
   dinner,
   stars,
   moon,
-  watch
-  
+  watch,
+  save,
+  save2,
+  save4,
+  mail
 };

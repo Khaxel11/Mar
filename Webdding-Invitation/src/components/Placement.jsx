@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { marker, hour, place } from '../assets'; 
+import { marker, hour, place, mail } from '../assets'; 
 import Map from './Map'
 const urlmap = "https://maps.app.goo.gl/hzA4Hvhk9FuL8QFB6";
 const Placement = () => {
@@ -45,7 +45,7 @@ const Placement = () => {
       >
         <div className='relative bg-white rounded-[10px] p-[20px]'>
           <h1 className='text-center font-bold text-[30px] md:text-[50px] lg:text-[50px] font-weddingtwo'>Hacienda</h1>
-          <h1 className='text-center font-bold text-[50px] md:text-[80px] lg:text-[80px] font-signature text-gold'>El Palmar</h1>
+          <h1 className='text-center font-bold text-[50px] md:text-[80px] lg:text-[80px] font-sign text-gold'>El Palmar</h1>
           <h2 className='text-center font-extrabold text-sm sm:text-xl font-poppins'>Salón de Eventos</h2>
           <p className='text-center mt-1 flex justify-center items-center font-bold font-poppins'>
             <img src={marker} alt="marker" className='w-[20px] sm:w-[32px] mr-2' />
@@ -55,8 +55,11 @@ const Placement = () => {
             <img src={hour} alt="hour" className='w-[20px] sm:w-[32px] mr-2' />
             <p>16 Marzo 2025, 21:30</p>
           </div>
-          <p className='text-center mt-2 font-mandala text-[20px] sm:text-[30px]'>Regalo Colectivo</p>
-
+          
+          <p className='text-center mt-2 font-mandala text-[20px] sm:text-[30px] flex items-center justify-center'>
+            <img src={mail} alt="regalo" className='w-[20px] sm:w-[32px] mr-2' />
+            Regalo Colectivo
+          </p>
           <p className='text-center mt-2'>
           <button type="button" onClick={()=>{
             window.open(urlmap)
