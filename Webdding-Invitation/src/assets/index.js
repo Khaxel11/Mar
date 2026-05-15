@@ -43,6 +43,8 @@ import save from './save.webp'
 import save2 from './save2.webp'
 import save4 from './save4.webp'
 import mail from './mail.svg'
+import ticket from './ticket.jpg'
+
 const player = {
   url : music,
   cover : cover,
@@ -94,5 +96,6 @@ export {
   save,
   save2,
   save4,
-  mail
+  mail,
+  ticket
 };
