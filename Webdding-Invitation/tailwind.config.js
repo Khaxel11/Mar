@@ -22,6 +22,7 @@ export default {
         sign: ["font-sign", "sans-serif"],
         handw: ["font-handw", "sans-serif"],
         rosalie: ["font-rosalie", "sans-serif"],
+        dancing: ["Dancing Script", "cursive"],
       },
     },
     screens: {

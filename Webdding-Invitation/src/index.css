@@ -208,3 +208,17 @@
   background: rgba(0, 0, 0, 0.719);
   filter: blur(450px);
 }
+
+/* Animaciones para páginas especiales */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

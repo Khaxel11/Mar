@@ -1,28 +1,59 @@
-import { useEffect, useState } from 'react';
-import Invitation from './components/Invitation';
-import Loader from './components/Loader';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useMemo } from 'react';
+import Menu from './components/Menu';
+import HomePage from './pages/HomePage';
+import InvitacionPage from './pages/InvitacionPage';
+import PresentacionPage from './pages/PresentacionPage';
+import InfoPage from './pages/InfoPage';
+import UbicacionPage from './pages/UbicacionPage';
+import PadrinosPage from './pages/PadrinosPage';
+import EspecialesPage from './pages/EspecialesPage';
+import AtuendoPage from './pages/AtuendoPage';
+import ItinerarioPage from './pages/ItinerarioPage';
+import GaleriaPage from './pages/GaleriaPage';
+import NotFoundPage from './pages/NotFoundPage';
+import SecretoPage from './pages/SecretoPage';
+import InvitacionBailePage from './pages/InvitacionBailePage';
+import WelcomePage from './pages/WelcomePage';
 import './invitation.css';
+import './styles/Menu.css';
 
-const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const loadResources = async () => {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      setLoading(false);
-    };
-
-    loadResources();
-  }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
+// Componente interno que usa useLocation
+const AppContent = () => {
+  const location = useLocation();
+  
+  // Rutas donde el menú NO debe mostrarse
+  const noMenuRoutes = ['/secreto', '/invitacion-baile'];
+  const showMenu = !noMenuRoutes.includes(location.pathname);
 
   return (
     <div className="w-full min-h-screen">
-      <Invitation />
+      {showMenu && <Menu />}
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="expo" element={<HomePage />} />
+        {/* <Route path="/invitacion" element={<InvitacionPage />} />
+        <Route path="/presentacion" element={<PresentacionPage />} />
+        <Route path="/info" element={<InfoPage />} />
+        <Route path="/ubicacion" element={<UbicacionPage />} />
+        <Route path="/padrinos" element={<PadrinosPage />} />
+        <Route path="/especiales" element={<EspecialesPage />} />
+        <Route path="/atuendo" element={<AtuendoPage />} />
+        <Route path="/itinerario" element={<ItinerarioPage />} />
+        <Route path="/galeria" element={<GaleriaPage />} /> */}
+        <Route path="/baile" element={<SecretoPage />} />
+        <Route path="/frase" element={<InvitacionBailePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </div>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 };
 
