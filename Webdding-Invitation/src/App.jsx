@@ -43,7 +43,7 @@ const AppContent = () => {
         <Route path="/galeria" element={<GaleriaPage />} /> */}
         <Route path="/baile" element={<SecretoPage />} />
         <Route path="/frase" element={<InvitacionBailePage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<WelcomePage />} />
       </Routes>
     </div>
   );
