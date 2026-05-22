@@ -2,7 +2,7 @@
 export const ROUTES = [
   {
     id: 'inicio',
-    path: '/',
+    path: '/Mar',
     label: 'Inicio',
     icon: 'home'
   },

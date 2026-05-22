@@ -30,7 +30,7 @@ const AppContent = () => {
     <div className="w-full min-h-screen">
       {showMenu && <Menu />}
       <Routes>
-        <Route path="/" element={<WelcomePage />} />
+        <Route path="/Mar" element={<WelcomePage />} />
         <Route path="expo" element={<HomePage />} />
         {/* <Route path="/invitacion" element={<InvitacionPage />} />
         <Route path="/presentacion" element={<PresentacionPage />} />
