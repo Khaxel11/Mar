@@ -44,6 +44,7 @@ import save2 from './save2.webp'
 import save4 from './save4.webp'
 import mail from './mail.svg'
 import ticket from './ticket.jpg'
+import top from './top.jpeg'
 
 const player = {
   url : music,
@@ -97,5 +98,6 @@ export {
   save2,
   save4,
   mail,
-  ticket
+  ticket,
+  top
 };

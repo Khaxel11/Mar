@@ -80,6 +80,13 @@ export const ROUTES = [
     label: '06 de Mayo',
     icon: 'ticket',
     special: true
+  },
+  {
+    id: 'cuestionario',
+    path: '/Mar',
+    label: '?',
+    icon: 'question',
+    hidden: true
   }
 ];
 

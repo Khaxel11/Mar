@@ -15,6 +15,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import SecretoPage from './pages/SecretoPage';
 import InvitacionBailePage from './pages/InvitacionBailePage';
 import WelcomePage from './pages/WelcomePage';
+import CuestionarioPage from './pages/CuestionarioPage';
 import './invitation.css';
 import './styles/Menu.css';
 
@@ -23,14 +24,14 @@ const AppContent = () => {
   const location = useLocation();
   
   // Rutas donde el menú NO debe mostrarse
-  const noMenuRoutes = ['/secreto', '/invitacion-baile'];
+  const noMenuRoutes = ['/secreto', '/invitacion-baile', '/cuestionario'];
   const showMenu = !noMenuRoutes.includes(location.pathname);
 
   return (
     <div className="w-full min-h-screen">
       {showMenu && <Menu />}
       <Routes>
-        <Route path="/Mar" element={<WelcomePage />} />
+        <Route path="/Mar" element={<CuestionarioPage />} />
         <Route path="expo" element={<HomePage />} />
         {/* <Route path="/invitacion" element={<InvitacionPage />} />
         <Route path="/presentacion" element={<PresentacionPage />} />
@@ -43,7 +44,8 @@ const AppContent = () => {
         <Route path="/galeria" element={<GaleriaPage />} /> */}
         <Route path="/baile" element={<SecretoPage />} />
         <Route path="/frase" element={<InvitacionBailePage />} />
-        <Route path="*" element={<WelcomePage />} />
+        <Route path="/cuestionario" element={<CuestionarioPage />} />
+        <Route path="*" element={<CuestionarioPage />} />
       </Routes>
     </div>
   );
